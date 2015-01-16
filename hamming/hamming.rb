@@ -12,10 +12,9 @@ class Hamming
     arr_1 = string_1.split('')
     arr_2 = string_2.split('')
     count = 0
+
     until arr_1.empty?
-      pop1 = arr_1.pop
-      pop2 = arr_2.pop
-      count += 1 if pop1 != pop2
+      count += 1 if arr_1.pop != arr_2.pop
     end
     count
   end
