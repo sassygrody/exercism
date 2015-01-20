@@ -43,10 +43,6 @@ class HammingTest < MiniTest::Unit::TestCase
   def test_hamming_distance_in_very_long_strand
     assert_equal 9, Hamming.compute('GGACGGATTCTG', 'AGGACGGATTCT')
   end
-
-  def test_unequal_lengths
-    assert_equal 'Cannot compute!', Hamming.compute('GGAG', 'GAG')
-  end
 end
 
 __END__
